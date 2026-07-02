@@ -1,9 +1,12 @@
-🛡️ Purple Team Lab – Scenario #1: RDP Brute Force Detection & Log Analysis
+🛡️ Purple Team Lab – Scenario #1: RDP Brute Force Detection & Log Analysis 
+
 📌 Project Overview
+
 This project demonstrates a purple team simulation of a Remote Desktop Protocol (RDP) brute-force attack against a Windows Server in a controlled home lab environment. The objective was to emulate an attacker attempting unauthorized access while validating that Wazuh SIEM successfully collected, correlated, and alerted on failed authentication events.
 This exercise highlights the detection and investigation workflow performed by a Security Operations Center (SOC) analyst, including Windows Event Log analysis, authentication monitoring, and incident validation.
 
 🎯 Objectives
+
 🔑 Simulate a failed RDP authentication attempt from Kali Linux
 🖥️ Generate Windows Security Event ID 4625 (Failed Logon)
 📊 Validate log ingestion into Wazuh SIEM
@@ -12,6 +15,7 @@ This exercise highlights the detection and investigation workflow performed by a
 📝 Document findings and map activity to the MITRE ATT&CK framework
 
 🖥️ Lab Environment
+
 Component
 Technology
 Attacker Machine
@@ -29,6 +33,7 @@ MITRE ATT&CK
 
 
 ⚔️ Attack Scenario
+
 🔑 Phase 1 – Initial Access Attempt
 Objective
 Simulate an attacker attempting to gain unauthorized access to a Windows Server through Remote Desktop Protocol (RDP) using invalid credentials.
@@ -49,6 +54,7 @@ Fake Admin Log
 
 
 🖥️ Windows Investigation
+
 Event Viewer
 Navigate to:
 Windows Logs
@@ -80,6 +86,7 @@ Authentication Package
 
 
 📊 Wazuh Detection
+
 Detection Summary
 Wazuh successfully detected and correlated the failed authentication attempt.
 Alerts included:
@@ -100,6 +107,7 @@ Alerts included:
 <img width="905" height="626" alt="Screenshot 2026-07-02 151515" src="https://github.com/user-attachments/assets/fae9d369-86f5-4771-82dc-8cb938eae592" />
 
 🔍 Investigation Summary
+
 Step
 Observation
 Attack Source
@@ -119,6 +127,7 @@ Wazuh SIEM
 
 
 🎯 MITRE ATT&CK Mapping
+
 Technique
 ATT&CK ID
 Valid Accounts (Attempt)
@@ -130,6 +139,7 @@ T1021.001
 
 
 🛡️ Wazuh Detection Summary
+
 ✅ Failed Authentication Detection
 ✅ Windows Security Event Collection
 ✅ Authentication Log Correlation
@@ -137,6 +147,7 @@ T1021.001
 ✅ Failed Logon Investigation
 
 📚 Skills Demonstrated
+
 🛡️ Security Monitoring
 📊 SIEM Analysis
 🔎 Threat Hunting
@@ -148,16 +159,18 @@ T1021.001
 📑 Incident Investigation
 
 📸 Screenshots
+
 📷 Failed RDP Login from Kali Linux
 📷 Windows Event Viewer (Event ID 4625)
 📷 Wazuh Authentication Alert
 📷 Wazuh Dashboard Overview
 
 💡 Lessons Learned
+
 This project demonstrated how a Security Information and Event Management (SIEM) platform can detect and correlate failed authentication attempts in near real time. By generating Windows Security Event ID 4625 through a simulated RDP login attempt, I validated Wazuh's ability to ingest security logs, identify suspicious authentication activity, and support incident investigation. This exercise strengthened my understanding of Windows event logging, authentication monitoring, and SOC investigation workflows.
 
 👩‍💻 Author
+
 Michael Stromer
+
 Aspiring SOC Analyst | Blue Team | Detection Engineering | Threat Hunting
-
-
