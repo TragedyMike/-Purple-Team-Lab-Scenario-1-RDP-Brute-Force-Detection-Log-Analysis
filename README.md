@@ -1,4 +1,4 @@
-🛡️ Purple Team Lab – Scenario #1: RDP Brute Force Detection & Log Analysis 
+# 🛡️ Purple Team Lab Scenario 1: RPD Brute Force Detection & Log Analysis
 
 📌 Project Overview
 
@@ -35,6 +35,7 @@ MITRE ATT&CK
 ⚔️ Attack Scenario
 
 🔑 Phase 1 – Initial Access Attempt
+
 Objective
 Simulate an attacker attempting to gain unauthorized access to a Windows Server through Remote Desktop Protocol (RDP) using invalid credentials.
 Command
@@ -149,6 +150,7 @@ T1021.001
 📚 Skills Demonstrated
 
 🛡️ Security Monitoring
+
 📊 SIEM Analysis
 🔎 Threat Hunting
 🪟 Windows Event Log Analysis
